@@ -8,18 +8,20 @@ import BaseTest.BaseClass;
 import PageObjects.LandingPage;
 import PageObjects.LoginPage;
 
-public class VerifyLoginPageErrorValidations extends BaseClass {
+public class VerifyLoginAndLogout extends BaseClass {
 
 	@Test
-	public void LoginPageError() throws IOException, InterruptedException {
+	public void loginAndLogout() throws IOException, InterruptedException{
 		// TODO Auto-generated method stub
+		String exp = "Logout";
 		
 		LandingPage landingpage= new LandingPage(driver);
 		landingpage.clickOnLoginBtn();
 		LoginPage	loginpage = new LoginPage(driver);
-		String actual = loginpage.loginInAppWithInvalidCredentials("1234567890", "Smartlook@123");
-		assertEquals(actual, "Incorrect username or password.");
-		
+		loginpage.loginInApp();
+		loginpage.clickOnLoginButton();
+		String act= landingpage.logout();
+		assertEquals(act, exp);
 		
 	
 	}

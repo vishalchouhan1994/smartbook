@@ -12,7 +12,7 @@ import PageObjects.LoginPage;
 public class VerifyLoginAndBookAppointmentFromFirstAvailableSlots extends BaseClass {
 
 	@Test
-	public void loginAndBookAppointment() throws IOException, InterruptedException {
+	public void loginAndBookFirstAvailableSlotAppointment() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		String expected = "Your appointment was booked successfully!";
 		LandingPage landingpage= new LandingPage(driver);

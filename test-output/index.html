@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,11 +103,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases.VerifyLoginPageErrorValidations" class="method navigator-link" hash-for-method="loginAndBookAppointment">loginAndBookAppointment</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots" class="method navigator-link" hash-for-method="loginAndBookAppointment">loginAndBookAppointment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -122,6 +117,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases.VerifyAddFeaturServiceInCart" class="method navigator-link" hash-for-method="loginAndBookAppointment">loginAndBookAppointment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots" class="method navigator-link" hash-for-method="loginAndBookAppointment">loginAndBookAppointment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyLoginAndLogout" class="method navigator-link" hash-for-method="loginAndLogout">loginAndLogout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -139,46 +144,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginAndBookAppointment">
-                  </a> <!-- loginAndBookAppointment -->
-                  <span class="method-name">loginAndBookAppointment</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;MuiBox-root jss131&quot;&gt;...&lt;/div&gt; is not clickable at point (1277, 35). Other element would receive the click: &lt;div class=&quot;MuiBackdrop-root jss69&quot; aria-hidden=&quot;true&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=121.0.6167.85)
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f741b65874e48c7b1200ce1698068291, clickElement {id=C5F3042500E26E5585F59C328B36D39E_element_12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\DELL55~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61895/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f741b65874e48c7b1200ce1698068291)] -&gt; xpath: //div[text()= &apos;Log in&apos;]]
-Session ID: f741b65874e48c7b1200ce1698068291
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at PageObjects.LandingPage.clickOnLoginBtn(LandingPage.java:54)
-	at TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots.loginAndBookAppointment(VerifyLoginAndBookAppointmentFromFirstAvailableSlots.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">TestCases.VerifyLoginPageErrorValidations</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -187,35 +152,30 @@ Session ID: f741b65874e48c7b1200ce1698068291
                   <a name="loginAndBookAppointment">
                   </a> <!-- loginAndBookAppointment -->
                   <span class="method-name">loginAndBookAppointment</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;MuiBox-root jss131&quot;&gt;...&lt;/div&gt; is not clickable at point (1277, 35). Other element would receive the click: &lt;div class=&quot;MuiBackdrop-root jss69&quot; aria-hidden=&quot;true&quot; style=&quot;opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=121.0.6167.85)
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4d6d696202cd61e4475039e6dea7ab5e, clickElement {id=3EE0B03D81DF8DEE14ADC84BF0B864C8_element_13}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\DELL55~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61850}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61850/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4d6d696202cd61e4475039e6dea7ab5e)] -&gt; xpath: //div[text()= &apos;Log in&apos;]]
-Session ID: 4d6d696202cd61e4475039e6dea7ab5e
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at PageObjects.LandingPage.clickOnLoginBtn(LandingPage.java:54)
-	at TestCases.VerifyLoginPageErrorValidations.loginAndBookAppointment(VerifyLoginPageErrorValidations.java:18)
+                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect username or passworded.] but found []
+	at TestCases.VerifyLoginPageErrorValidations.loginAndBookAppointment(VerifyLoginPageErrorValidations.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAndBookAppointment">
+                  </a> <!-- loginAndBookAppointment -->
+                  <span class="method-name">loginAndBookAppointment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -227,6 +187,21 @@ Session ID: 4d6d696202cd61e4475039e6dea7ab5e
                   <a name="loginAndBookAppointment">
                   </a> <!-- loginAndBookAppointment -->
                   <span class="method-name">loginAndBookAppointment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.VerifyLoginAndLogout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAndLogout">
+                  </a> <!-- loginAndLogout -->
+                  <span class="method-name">loginAndLogout</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -256,6 +231,11 @@ Session ID: 4d6d696202cd61e4475039e6dea7ab5e
       &lt;class name=&quot;TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Verify Login and book appointment from first available service test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Verify Login and Logout test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.VerifyLoginAndLogout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Verify Login and Logout test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -274,6 +254,9 @@ Session ID: 4d6d696202cd61e4475039e6dea7ab5e
               </li>
               <li>
                 <span class="test-name">Verify Login and book appointment from first available service test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Verify Login and Logout test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -299,24 +282,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginAndBookAppointment')
 data.setCell(0, 2, 'TestCases.VerifyAddFeaturServiceInCart')
-data.setCell(0, 3, 26182);
+data.setCell(0, 3, 25806);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginAndBookAppointment')
-data.setCell(1, 2, 'TestCases.VerifyLoginPageErrorValidations')
-data.setCell(1, 3, 15855);
+data.setCell(1, 2, 'TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots')
+data.setCell(1, 3, 22971);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginAndBookAppointment')
-data.setCell(2, 2, 'TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots')
-data.setCell(2, 3, 5186);
+data.setCell(2, 1, 'loginAndLogout')
+data.setCell(2, 2, 'TestCases.VerifyLoginAndLogout')
+data.setCell(2, 3, 19405);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginAndBookAppointment')
+data.setCell(3, 2, 'TestCases.VerifyLoginPageErrorValidations')
+data.setCell(3, 3, 11429);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -349,45 +336,58 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginAndBookAppointment</span>
-                <span class="method-start">7192 ms</span>
+                <span class="method-start">7652 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33383 ms</span>
+                <span class="method-start">33466 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.VerifyLoginPageErrorValidations</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">33681 ms</span>
+                <span class="method-start">33786 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginAndBookAppointment</span>
-                <span class="method-start">39753 ms</span>
+                <span class="method-start">45058 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">55623 ms</span>
+                <span class="method-start">56494 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">55897 ms</span>
+                <span class="method-start">56751 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginAndBookAppointment</span>
-                <span class="method-start">62174 ms</span>
+                <span class="method-start">64323 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">67361 ms</span>
+                <span class="method-start">87295 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.VerifyLoginAndLogout</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">87543 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginAndLogout</span>
+                <span class="method-start">94701 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">114106 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

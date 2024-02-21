@@ -12,7 +12,7 @@ import PageObjects.LoginPage;
 public class VerifyAddFeaturServiceInCart extends BaseClass {
 
 	@Test
-	public void loginAndBookAppointment() throws InterruptedException, IOException {
+	public void BookFeaturedService() throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
 		String expected = "Your appointment was booked successfully!";
 		LandingPage landingpage = new LandingPage(driver);

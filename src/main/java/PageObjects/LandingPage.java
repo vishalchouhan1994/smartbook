@@ -23,6 +23,14 @@ public class LandingPage extends AbstractComponent {
 		PageFactory.initElements(driver, this); // To initialize driver object in current page,
 	}
 
+	// Find logout button on landing page
+	@FindBy(xpath ="//div[text() ='Logout']")
+	WebElement logoutButtontn;
+
+	// Find customer name button on landing page
+	@FindBy(css = "div[class='MuiAvatar-root MuiAvatar-circular']")
+	WebElement customerNamebtn;
+
 	// Find Login button on landing page
 	@FindBy(xpath = "//div[text()= 'Log in']")
 	WebElement loginBtn;
@@ -56,25 +64,29 @@ public class LandingPage extends AbstractComponent {
 
 	// Method to click on bookAptBtn
 	public void clickOnBookAptBtn() {
-		try {
-			Thread.sleep(8000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		// Create an instance of JavascriptExecutor
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		  // Wait for the element to be clickable
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Adjust timeout as needed
+	    wait.until(ExpectedConditions.elementToBeClickable(bookAptBtn));
 
-		// Scroll down the page by 500 pixels vertically
-		js.executeScript("window.scrollBy(0,500)");
-		bookAptBtn.click();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	    // Scroll down the page by 500 pixels vertically using JavaScriptExecutor
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("window.scrollBy(0,500)");
 
+	    // Click on the button
+	    bookAptBtn.click();
+
+	}
+
+	public String logout() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // Adjust timeout as needed
+
+		WebElement customerName = wait.until(ExpectedConditions.elementToBeClickable(customerNamebtn));
+		customerName.click();
+		WebElement logout = wait.until(ExpectedConditions.elementToBeClickable(logoutButtontn));
+		String actual= logout.getText();
+		logout.click();
+		return actual;
+		
 	}
 
 	public void clickOnBookAptBtnWhenCardAlreadyAdded() {
