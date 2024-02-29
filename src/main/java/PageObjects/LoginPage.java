@@ -13,14 +13,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import AbstractComponents.AbstractComponent;
 
-public class LoginPage extends AbstractComponent {
+
+public class LoginPage  {
 
 	WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
-		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this); // To initialize driver object in current page,
 	}
@@ -57,25 +56,31 @@ public class LoginPage extends AbstractComponent {
 
 		userNameInputField.sendKeys(user);
 		passwordInputField.sendKeys(pwd);
-		//passwordInputField.submit();
-		
+		// passwordInputField.submit();
+
 	}
-	
-	public void clickOnLoginButton() throws InterruptedException
-	{
-		 
-			Thread.sleep(4000);
-	        loginSubmitButton.click();
-	       
+
+	public void clickOnLoginButton() throws InterruptedException {
+
+		Thread.sleep(4000);
+		loginSubmitButton.click();
+
 	}
 
 	public String loginInAppWithInvalidCredentials(String userName, String password) throws InterruptedException {
 
-		Thread.sleep(4000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//input[@name='userName']")));
+
 		userNameInputField.sendKeys(userName);
 		passwordInputField.sendKeys(password);
-		
+		Thread.sleep(4000);
+
 		loginSubmitButton.click();
+
+		wait.until(ExpectedConditions
+				.visibilityOfAllElementsLocatedBy(By.xpath("//div[text()='Incorrect username or password.']")));
 		String actual = errorMsg.getText();
 		return actual;
 

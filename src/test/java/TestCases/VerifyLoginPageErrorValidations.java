@@ -13,15 +13,13 @@ public class VerifyLoginPageErrorValidations extends BaseClass {
 	@Test
 	public void LoginPageError() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
-		
-		LandingPage landingpage= new LandingPage(driver);
+
+		LandingPage landingpage = new LandingPage(driver);
 		landingpage.clickOnLoginBtn();
-		LoginPage	loginpage = new LoginPage(driver);
+		LoginPage loginpage = new LoginPage(driver);
 		String actual = loginpage.loginInAppWithInvalidCredentials("1234567890", "Smartlook@123");
 		assertEquals(actual, "Incorrect username or password.");
-		
-		
-	
+
 	}
 
 }

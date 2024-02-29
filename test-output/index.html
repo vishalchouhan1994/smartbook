@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyLoginPageErrorValidations" class="method navigator-link" hash-for-method="loginAndBookAppointment">loginAndBookAppointment</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,12 +102,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyAddFeaturServiceInCart" class="method navigator-link" hash-for-method="loginAndBookAppointment">loginAndBookAppointment</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyAddFeaturServiceInCart" class="method navigator-link" hash-for-method="BookFeaturedService">BookFeaturedService</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots" class="method navigator-link" hash-for-method="loginAndBookAppointment">loginAndBookAppointment</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyLoginPageErrorValidations" class="method navigator-link" hash-for-method="LoginPageError">LoginPageError</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots" class="method navigator-link" hash-for-method="loginAndBookFirstAvailableSlotAppointment">loginAndBookFirstAvailableSlotAppointment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -141,41 +132,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestCases.VerifyLoginPageErrorValidations</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginAndBookAppointment">
-                  </a> <!-- loginAndBookAppointment -->
-                  <span class="method-name">loginAndBookAppointment</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect username or passworded.] but found []
-	at TestCases.VerifyLoginPageErrorValidations.loginAndBookAppointment(VerifyLoginPageErrorValidations.java:21)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginAndBookAppointment">
-                  </a> <!-- loginAndBookAppointment -->
-                  <span class="method-name">loginAndBookAppointment</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -184,9 +140,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginAndBookAppointment">
-                  </a> <!-- loginAndBookAppointment -->
-                  <span class="method-name">loginAndBookAppointment</span>
+                  <a name="BookFeaturedService">
+                  </a> <!-- BookFeaturedService -->
+                  <span class="method-name">BookFeaturedService</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAndBookFirstAvailableSlotAppointment">
+                  </a> <!-- loginAndBookFirstAvailableSlotAppointment -->
+                  <span class="method-name">loginAndBookFirstAvailableSlotAppointment</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,6 +173,21 @@
                   <a name="loginAndLogout">
                   </a> <!-- loginAndLogout -->
                   <span class="method-name">loginAndLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.VerifyLoginPageErrorValidations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginPageError">
+                  </a> <!-- LoginPageError -->
+                  <span class="method-name">LoginPageError</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -284,21 +270,21 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginAndBookAppointment')
+data.setCell(0, 1, 'BookFeaturedService')
 data.setCell(0, 2, 'TestCases.VerifyAddFeaturServiceInCart')
-data.setCell(0, 3, 25806);
+data.setCell(0, 3, 23141);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginAndBookAppointment')
+data.setCell(1, 1, 'loginAndBookFirstAvailableSlotAppointment')
 data.setCell(1, 2, 'TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots')
-data.setCell(1, 3, 22971);
+data.setCell(1, 3, 20413);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginAndLogout')
 data.setCell(2, 2, 'TestCases.VerifyLoginAndLogout')
-data.setCell(2, 3, 19405);
+data.setCell(2, 3, 16407);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginAndBookAppointment')
+data.setCell(3, 1, 'LoginPageError')
 data.setCell(3, 2, 'TestCases.VerifyLoginPageErrorValidations')
-data.setCell(3, 3, 11429);
+data.setCell(3, 3, 8552);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -335,59 +321,57 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginAndBookAppointment</span>
-                <span class="method-start">7652 ms</span>
+                <span class="method-name">BookFeaturedService</span>
+                <span class="method-start">68672 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33466 ms</span>
+                <span class="method-start">91823 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.VerifyLoginPageErrorValidations</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">33786 ms</span>
+                <span class="method-start">92107 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginAndBookAppointment</span>
-                <span class="method-start">45058 ms</span>
+                <span class="method-name">LoginPageError</span>
+                <span class="method-start">156937 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">56494 ms</span>
+                <span class="method-start">165493 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">56751 ms</span>
+                <span class="method-start">165733 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginAndBookAppointment</span>
-                <span class="method-start">64323 ms</span>
+                <span class="method-name">loginAndBookFirstAvailableSlotAppointment</span>
+                <span class="method-start">254623 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">87295 ms</span>
+                <span class="method-start">275037 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.VerifyLoginAndLogout</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">87543 ms</span>
+                <span class="method-start">275284 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginAndLogout</span>
-                <span class="method-start">94701 ms</span>
+                <span class="method-start">324745 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">114106 ms</span>
+                <span class="method-start">341153 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

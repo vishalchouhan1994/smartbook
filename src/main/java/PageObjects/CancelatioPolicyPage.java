@@ -9,13 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import AbstractComponents.AbstractComponent;
 
-public class CancelatioPolicyPage extends AbstractComponent {
+public class CancelatioPolicyPage   {
 	WebDriver driver;
 
 	public CancelatioPolicyPage(WebDriver driver) {
-		super(driver);
+	
 		this.driver = driver;
 		PageFactory.initElements(driver, this); // To initialize driver object in current page,
 	}

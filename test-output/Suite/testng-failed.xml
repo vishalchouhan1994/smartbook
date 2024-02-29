@@ -7,9 +7,20 @@
         <methods>
           <include name="tearDown"/>
           <include name="launchApplication"/>
-          <include name="loginAndBookAppointment"/>
+          <include name="LoginPageError"/>
         </methods>
       </class> <!-- TestCases.VerifyLoginPageErrorValidations -->
     </classes>
   </test> <!-- Verify Login Page Error Validations Test(failed) -->
+  <test thread-count="5" name="Verify Login and book appointment from first available service test(failed)">
+    <classes>
+      <class name="TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots">
+        <methods>
+          <include name="loginAndBookFirstAvailableSlotAppointment"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots -->
+    </classes>
+  </test> <!-- Verify Login and book appointment from first available service test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
