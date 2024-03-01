@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-01T15:18:44 IST" name="Suite" finished-at="2024-03-01T15:19:20 IST" duration-ms="35582">
+  <suite started-at="2024-03-01T18:59:35 IST" name="Suite" finished-at="2024-03-01T19:00:07 IST" duration-ms="32158">
     <groups>
     </groups>
-    <test started-at="2024-03-01T15:18:44 IST" name="Login" finished-at="2024-03-01T15:19:20 IST" duration-ms="35582">
+    <test started-at="2024-03-01T18:59:35 IST" name="Login" finished-at="2024-03-01T19:00:07 IST" duration-ms="32158">
       <class name="TestCases.VerifyLoginAndLogout">
-        <test-method is-config="true" signature="initializeDriverAndLaunchApplication()[pri:0, instance:TestCases.VerifyLoginAndLogout@343570b7]" started-at="2024-03-01T15:18:44 IST" name="initializeDriverAndLaunchApplication" finished-at="2024-03-01T15:18:57 IST" duration-ms="12479" status="PASS">
+        <test-method is-config="true" signature="initializeDriverAndLaunchApplication()[pri:0, instance:TestCases.VerifyLoginAndLogout@343570b7]" started-at="2024-03-01T18:59:35 IST" name="initializeDriverAndLaunchApplication" finished-at="2024-03-01T18:59:44 IST" duration-ms="9249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriverAndLaunchApplication -->
-        <test-method signature="loginAndLogout()[pri:0, instance:TestCases.VerifyLoginAndLogout@343570b7]" started-at="2024-03-01T15:18:57 IST" name="loginAndLogout" finished-at="2024-03-01T15:19:19 IST" duration-ms="22731" status="PASS">
+        <test-method signature="loginAndLogout()[pri:0, instance:TestCases.VerifyLoginAndLogout@343570b7]" started-at="2024-03-01T18:59:44 IST" name="loginAndLogout" finished-at="2024-03-01T19:00:07 IST" duration-ms="22527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAndLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyLoginAndLogout@343570b7]" started-at="2024-03-01T15:19:19 IST" name="tearDown" finished-at="2024-03-01T15:19:20 IST" duration-ms="332" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyLoginAndLogout@343570b7]" started-at="2024-03-01T19:00:07 IST" name="tearDown" finished-at="2024-03-01T19:00:07 IST" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

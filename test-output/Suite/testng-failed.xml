@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Verify Login Page Error Validations Test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="AddFeatureService Test(failed)">
     <classes>
-      <class name="TestCases.VerifyLoginPageErrorValidations">
+      <class name="TestCases.VerifyAddFeaturServiceInCart">
         <methods>
+          <include name="initializeDriverAndLaunchApplication"/>
+          <include name="BookFeaturedService"/>
           <include name="tearDown"/>
-          <include name="launchApplication"/>
-          <include name="LoginPageError"/>
         </methods>
-      </class> <!-- TestCases.VerifyLoginPageErrorValidations -->
+      </class> <!-- TestCases.VerifyAddFeaturServiceInCart -->
     </classes>
-  </test> <!-- Verify Login Page Error Validations Test(failed) -->
-  <test thread-count="5" name="Verify Login and book appointment from first available service test(failed)">
+  </test> <!-- AddFeatureService Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Verify Login and book appointment from first available service test(failed)">
     <classes>
       <class name="TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots">
         <methods>
           <include name="loginAndBookFirstAvailableSlotAppointment"/>
+          <include name="initializeDriverAndLaunchApplication"/>
           <include name="tearDown"/>
-          <include name="launchApplication"/>
         </methods>
       </class> <!-- TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots -->
     </classes>
