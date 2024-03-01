@@ -13,51 +13,50 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 
-import PageObjects.LandingPage;
-
 public class BaseClass {
 
-	public WebDriver driver;
-	public Properties properties;
-	public LandingPage landingpage;
+    public WebDriver driver;
+    public Properties properties;
 
-	public WebDriver initializeDriver() throws IOException {
-		properties = new Properties();
-		FileInputStream fis = new FileInputStream(
-				"C://Users//Dell 5580//eclipse-workspace//AutomationPractise//Smartlook//src//main//java//GlobalProperties//config.properties");
-		properties.load(fis);
-		String browserinvoke = properties.getProperty("browser");
-		switch (browserinvoke.toLowerCase()) {
-		case "chrome":
-			driver = new ChromeDriver();
-			break;
-		case "firefox":
-			driver = new FirefoxDriver();
-			break;
+    @BeforeMethod
+    public void initializeDriverAndLaunchApplication() throws IOException {
+        properties = loadPropertiesFile("C://Users//Dell 5580//eclipse-workspace//AutomationPractise//Smartlook//src//main//java//GlobalProperties//config.properties");
+        String browserInvoke = properties.getProperty("browser");
+        driver = initializeDriver(browserInvoke);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		}
+        String URL = properties.getProperty("url");
+        driver.get(URL);
+    }
 
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    @AfterMethod
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 
-		return driver;
-	}
+    private Properties loadPropertiesFile(String filePath) throws IOException {
+        Properties properties = new Properties();
+        FileInputStream fis = new FileInputStream(filePath);
+        properties.load(fis);
+        return properties;
+    }
 
-	@BeforeMethod
-	public void launchApplication() throws IOException {
-		driver = initializeDriver();
-		FileInputStream fis = new FileInputStream(
-				"C://Users//Dell 5580//eclipse-workspace//AutomationPractise//Smartlook//src//main//java//GlobalProperties//config.properties");
-		properties.load(fis);
-		String URL = properties.getProperty("url");
-		
-		driver.get(URL);
-		
-
-	}
-
-	@AfterMethod
-	public void tearDown() {
-		driver.close();
-	}
+    private WebDriver initializeDriver(String browserName) {
+        WebDriver driver = null;
+        switch (browserName.toLowerCase()) {
+            case "chrome":
+                driver = new ChromeDriver();
+                break;
+            case "firefox":
+                driver = new FirefoxDriver();
+                break;
+            // Add more cases for other browsers if needed
+            default:
+                throw new IllegalArgumentException("Invalid browser name provided in config.properties file.");
+        }
+        return driver;
+    }
 }

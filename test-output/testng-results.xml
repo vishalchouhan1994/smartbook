@@ -1,73 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T19:15:42 IST" name="Suite" finished-at="2024-02-29T19:21:23 IST" duration-ms="341377">
+  <suite started-at="2024-03-01T15:18:44 IST" name="Suite" finished-at="2024-03-01T15:19:20 IST" duration-ms="35582">
     <groups>
     </groups>
-    <test started-at="2024-02-29T19:15:42 IST" name="AddFeatureService Test" finished-at="2024-02-29T19:17:14 IST" duration-ms="92089">
-      <class name="TestCases.VerifyAddFeaturServiceInCart">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestCases.VerifyAddFeaturServiceInCart@157853da]" started-at="2024-02-29T19:15:42 IST" name="launchApplication" finished-at="2024-02-29T19:16:50 IST" duration-ms="68671" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="BookFeaturedService()[pri:0, instance:TestCases.VerifyAddFeaturServiceInCart@157853da]" started-at="2024-02-29T19:16:50 IST" name="BookFeaturedService" finished-at="2024-02-29T19:17:13 IST" duration-ms="23141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BookFeaturedService -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyAddFeaturServiceInCart@157853da]" started-at="2024-02-29T19:17:13 IST" name="tearDown" finished-at="2024-02-29T19:17:14 IST" duration-ms="232" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.VerifyAddFeaturServiceInCart -->
-    </test> <!-- AddFeatureService Test -->
-    <test started-at="2024-02-29T19:17:14 IST" name="Verify Login Page Error Validations Test" finished-at="2024-02-29T19:18:27 IST" duration-ms="73615">
-      <class name="TestCases.VerifyLoginPageErrorValidations">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestCases.VerifyLoginPageErrorValidations@3541cb24]" started-at="2024-02-29T19:17:14 IST" name="launchApplication" finished-at="2024-02-29T19:18:18 IST" duration-ms="64830" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="LoginPageError()[pri:0, instance:TestCases.VerifyLoginPageErrorValidations@3541cb24]" started-at="2024-02-29T19:18:18 IST" name="LoginPageError" finished-at="2024-02-29T19:18:27 IST" duration-ms="8552" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginPageError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyLoginPageErrorValidations@3541cb24]" started-at="2024-02-29T19:18:27 IST" name="tearDown" finished-at="2024-02-29T19:18:27 IST" duration-ms="225" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.VerifyLoginPageErrorValidations -->
-    </test> <!-- Verify Login Page Error Validations Test -->
-    <test started-at="2024-02-29T19:18:27 IST" name="Verify Login and book appointment from first available service test" finished-at="2024-02-29T19:20:17 IST" duration-ms="109541">
-      <class name="TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots@5fa07e12]" started-at="2024-02-29T19:18:27 IST" name="launchApplication" finished-at="2024-02-29T19:19:56 IST" duration-ms="88890" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="loginAndBookFirstAvailableSlotAppointment()[pri:0, instance:TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots@5fa07e12]" started-at="2024-02-29T19:19:56 IST" name="loginAndBookFirstAvailableSlotAppointment" finished-at="2024-02-29T19:20:17 IST" duration-ms="20413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAndBookFirstAvailableSlotAppointment -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots@5fa07e12]" started-at="2024-02-29T19:20:17 IST" name="tearDown" finished-at="2024-02-29T19:20:17 IST" duration-ms="234" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots -->
-    </test> <!-- Verify Login and book appointment from first available service test -->
-    <test started-at="2024-02-29T19:20:17 IST" name="Verify Login and Logout test" finished-at="2024-02-29T19:21:23 IST" duration-ms="66062">
+    <test started-at="2024-03-01T15:18:44 IST" name="Login" finished-at="2024-03-01T15:19:20 IST" duration-ms="35582">
       <class name="TestCases.VerifyLoginAndLogout">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestCases.VerifyLoginAndLogout@62e7f11d]" started-at="2024-02-29T19:20:17 IST" name="launchApplication" finished-at="2024-02-29T19:21:06 IST" duration-ms="49460" status="PASS">
+        <test-method is-config="true" signature="initializeDriverAndLaunchApplication()[pri:0, instance:TestCases.VerifyLoginAndLogout@343570b7]" started-at="2024-03-01T15:18:44 IST" name="initializeDriverAndLaunchApplication" finished-at="2024-03-01T15:18:57 IST" duration-ms="12479" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="loginAndLogout()[pri:0, instance:TestCases.VerifyLoginAndLogout@62e7f11d]" started-at="2024-02-29T19:21:06 IST" name="loginAndLogout" finished-at="2024-02-29T19:21:23 IST" duration-ms="16407" status="PASS">
+        </test-method> <!-- initializeDriverAndLaunchApplication -->
+        <test-method signature="loginAndLogout()[pri:0, instance:TestCases.VerifyLoginAndLogout@343570b7]" started-at="2024-03-01T15:18:57 IST" name="loginAndLogout" finished-at="2024-03-01T15:19:19 IST" duration-ms="22731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAndLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyLoginAndLogout@62e7f11d]" started-at="2024-02-29T19:21:23 IST" name="tearDown" finished-at="2024-02-29T19:21:23 IST" duration-ms="192" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyLoginAndLogout@343570b7]" started-at="2024-03-01T15:19:19 IST" name="tearDown" finished-at="2024-03-01T15:19:20 IST" duration-ms="332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.VerifyLoginAndLogout -->
-    </test> <!-- Verify Login and Logout test -->
+    </test> <!-- Login -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -24,7 +24,7 @@ public class LandingPage {
 
 	// Find logout button on landing page
 	@FindBy(xpath = "//div[text() ='Logout']")
-	WebElement logoutButtontn;
+	WebElement logoutButton;
 
 	// Find customer name button on landing page
 	@FindBy(css = "div[class='MuiAvatar-root MuiAvatar-circular']")
@@ -81,7 +81,7 @@ public class LandingPage {
 
 		WebElement customerName = wait.until(ExpectedConditions.elementToBeClickable(customerNamebtn));
 		customerName.click();
-		WebElement logout = wait.until(ExpectedConditions.elementToBeClickable(logoutButtontn));
+		WebElement logout = wait.until(ExpectedConditions.elementToBeClickable(logoutButton));
 		String actual = logout.getText();
 		logout.click();
 		return actual;
@@ -105,7 +105,7 @@ public class LandingPage {
 		js.executeScript("arguments[0].click();", element);
 	}
 
-	public String getAppointmentConfirmationMessage() {
+	public String getConfirmationMessage() {
 		String match = getConfirmationMessage.getText();
 		return match;
 

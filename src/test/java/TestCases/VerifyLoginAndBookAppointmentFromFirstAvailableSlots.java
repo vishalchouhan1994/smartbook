@@ -23,7 +23,7 @@ public class VerifyLoginAndBookAppointmentFromFirstAvailableSlots extends BaseCl
 		CancelatioPolicyPage CancelatioPolicyPage = new CancelatioPolicyPage(driver);
 		landingpage.clickOnBookAptBtnWhenCardAlreadyAdded();
 		CancelatioPolicyPage.acceptAndBook();
-		String actual = landingpage.getAppointmentConfirmationMessage();
+		String actual = landingpage.getConfirmationMessage();
 		assertEquals(actual, expected);
 	
 	}

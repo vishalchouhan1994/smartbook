@@ -23,7 +23,7 @@ public class VerifyAddFeaturServiceInCart extends BaseClass {
 		lp.clickOnLoginButton();
 		CancelatioPolicyPage cp = new CancelatioPolicyPage(driver);
 		cp.acceptAndBook();
-		String actual = landingpage.getAppointmentConfirmationMessage();
+		String actual = landingpage.getConfirmationMessage();
 		assertEquals(actual, expected);
 
 	}
