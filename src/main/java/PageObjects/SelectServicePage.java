@@ -7,4 +7,5 @@ public class SelectServicePage {
 	//Test
 	public String var;
 	
+	public String test;
 }

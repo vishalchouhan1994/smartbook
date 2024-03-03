@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests">
-	<test thread-count="2" name="AddFeatureService Test">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="BaseTest.Listeners.java"/>
+</listeners>
+
+	<test thread-count="1" name="AddFeatureService Test">
 		<classes>
 			<class name="TestCases.VerifyAddFeaturServiceInCart" />
 		</classes>
