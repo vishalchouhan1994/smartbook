@@ -62,7 +62,7 @@ public class LoginPage  {
 
 	public void clickOnLoginButton() throws InterruptedException {
 
-		Thread.sleep(4000);
+		//Thread.sleep(4000);
 		loginSubmitButton.click();
 
 	}
