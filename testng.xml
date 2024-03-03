@@ -3,7 +3,7 @@
 <suite name="Suite">
 
 <listeners>
-<listener class-name="BaseTest.Listeners.java"/>
+<listener class-name="BaseTest.Listeners"/>
 </listeners>
 
 	<test thread-count="1" name="AddFeatureService Test">
