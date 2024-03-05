@@ -12,7 +12,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 public class LandingPage {
 	WebDriver driver;
 
@@ -51,6 +50,26 @@ public class LandingPage {
 	// Find feature services display on landing page
 	@FindBy(css = ".MuiGrid-grid-xs-4")
 	List<WebElement> featruedServices;
+
+	// Find pick stylist and date locator
+	@FindBy(xpath = "//div[text()='Pick Stylist/ Date']")
+	WebElement pickStylistAndDate;
+
+	// Click on Pick stylist and date
+	public void clickOnPickStylisAndDate() {
+
+		// Create an instance of JavascriptExecutor
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		// Scroll down the page by 500 pixels vertically
+		js.executeScript("window.scrollBy(0,400)");
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // Adjust timeout as needed
+
+		WebElement pickbtn = wait.until(ExpectedConditions.elementToBeClickable(pickStylistAndDate));
+		pickbtn.click();
+
+	}
 
 	// Method to click on login button from landing page
 	public void clickOnLoginBtn() {
