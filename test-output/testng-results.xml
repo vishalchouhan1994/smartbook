@@ -1,25 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="1" ignored="0" total="6" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-04T20:18:08 IST" name="Default suite" finished-at="2024-03-04T20:18:35 IST" duration-ms="26360">
+  <suite started-at="2024-03-09T19:01:19 IST" name="Suite" finished-at="2024-03-09T19:04:49 IST" duration-ms="210256">
     <groups>
     </groups>
-    <test started-at="2024-03-04T20:18:08 IST" name="Default test" finished-at="2024-03-04T20:18:35 IST" duration-ms="26360">
-      <class name="TestCases.VerifyBookAppointmentFromPickStylistaAndDate">
-        <test-method is-config="true" signature="initializeDriverAndLaunchApplication()[pri:0, instance:TestCases.VerifyBookAppointmentFromPickStylistaAndDate@46fa7c39]" started-at="2024-03-04T20:18:08 IST" name="initializeDriverAndLaunchApplication" finished-at="2024-03-04T20:18:12 IST" duration-ms="3712" status="PASS">
+    <test started-at="2024-03-09T19:01:19 IST" name="AddFeatureService Test" finished-at="2024-03-09T19:01:57 IST" duration-ms="37636">
+      <class name="TestCases.VerifyAddFeaturServiceInCart">
+        <test-method is-config="true" signature="initializeDriverAndLaunchApplication()[pri:0, instance:TestCases.VerifyAddFeaturServiceInCart@198d6542]" started-at="2024-03-09T19:01:19 IST" name="initializeDriverAndLaunchApplication" finished-at="2024-03-09T19:01:30 IST" duration-ms="10599" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriverAndLaunchApplication -->
-        <test-method signature="BookAppointmentFromPickStylistAndDate()[pri:0, instance:TestCases.VerifyBookAppointmentFromPickStylistaAndDate@46fa7c39]" started-at="2024-03-04T20:18:12 IST" name="BookAppointmentFromPickStylistAndDate" finished-at="2024-03-04T20:18:34 IST" duration-ms="22276" status="PASS">
+        <test-method signature="BookFeaturedService()[pri:0, instance:TestCases.VerifyAddFeaturServiceInCart@198d6542]" started-at="2024-03-09T19:01:30 IST" name="BookFeaturedService" finished-at="2024-03-09T19:01:56 IST" duration-ms="26546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookFeaturedService -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyAddFeaturServiceInCart@198d6542]" started-at="2024-03-09T19:01:56 IST" name="tearDown" finished-at="2024-03-09T19:01:57 IST" duration-ms="430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.VerifyAddFeaturServiceInCart -->
+    </test> <!-- AddFeatureService Test -->
+    <test started-at="2024-03-09T19:01:57 IST" name="Verify Login Page Error Validations Test" finished-at="2024-03-09T19:02:52 IST" duration-ms="54540">
+      <class name="TestCases.VerifyLoginPageErrorValidations">
+        <test-method is-config="true" signature="initializeDriverAndLaunchApplication()[pri:0, instance:TestCases.VerifyLoginPageErrorValidations@18e36d14]" started-at="2024-03-09T19:01:57 IST" name="initializeDriverAndLaunchApplication" finished-at="2024-03-09T19:02:07 IST" duration-ms="10022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriverAndLaunchApplication -->
+        <test-method retried="true" signature="LoginPageError()[pri:0, instance:TestCases.VerifyLoginPageErrorValidations@18e36d14]" started-at="2024-03-09T19:02:07 IST" name="LoginPageError" finished-at="2024-03-09T19:02:22 IST" duration-ms="14711" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect username or passworded.] but found [Incorrect username or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect username or passworded.] but found [Incorrect username or password.]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at TestCases.VerifyLoginPageErrorValidations.LoginPageError(VerifyLoginPageErrorValidations.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyLoginPageErrorValidations@18e36d14]" started-at="2024-03-09T19:02:22 IST" name="tearDown" finished-at="2024-03-09T19:02:22 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeDriverAndLaunchApplication()[pri:0, instance:TestCases.VerifyLoginPageErrorValidations@18e36d14]" started-at="2024-03-09T19:02:22 IST" name="initializeDriverAndLaunchApplication" finished-at="2024-03-09T19:02:37 IST" duration-ms="14838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriverAndLaunchApplication -->
+        <test-method signature="LoginPageError()[pri:0, instance:TestCases.VerifyLoginPageErrorValidations@18e36d14]" started-at="2024-03-09T19:02:37 IST" name="LoginPageError" finished-at="2024-03-09T19:02:51 IST" duration-ms="14039" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect username or passworded.] but found [Incorrect username or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect username or passworded.] but found [Incorrect username or password.]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at TestCases.VerifyLoginPageErrorValidations.LoginPageError(VerifyLoginPageErrorValidations.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyLoginPageErrorValidations@18e36d14]" started-at="2024-03-09T19:02:51 IST" name="tearDown" finished-at="2024-03-09T19:02:52 IST" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.VerifyLoginPageErrorValidations -->
+    </test> <!-- Verify Login Page Error Validations Test -->
+    <test started-at="2024-03-09T19:02:52 IST" name="Verify Login and book appointment from first available service test" finished-at="2024-03-09T19:03:27 IST" duration-ms="35173">
+      <class name="TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots">
+        <test-method is-config="true" signature="initializeDriverAndLaunchApplication()[pri:0, instance:TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots@6057aebb]" started-at="2024-03-09T19:02:52 IST" name="initializeDriverAndLaunchApplication" finished-at="2024-03-09T19:03:01 IST" duration-ms="9633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriverAndLaunchApplication -->
+        <test-method signature="loginAndBookFirstAvailableSlotAppointment()[pri:0, instance:TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots@6057aebb]" started-at="2024-03-09T19:03:01 IST" name="loginAndBookFirstAvailableSlotAppointment" finished-at="2024-03-09T19:03:26 IST" duration-ms="25146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndBookFirstAvailableSlotAppointment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots@6057aebb]" started-at="2024-03-09T19:03:26 IST" name="tearDown" finished-at="2024-03-09T19:03:27 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots -->
+    </test> <!-- Verify Login and book appointment from first available service test -->
+    <test started-at="2024-03-09T19:03:27 IST" name="Verify Login and Logout test" finished-at="2024-03-09T19:04:00 IST" duration-ms="33580">
+      <class name="TestCases.VerifyLoginAndLogout">
+        <test-method is-config="true" signature="initializeDriverAndLaunchApplication()[pri:0, instance:TestCases.VerifyLoginAndLogout@48d61b48]" started-at="2024-03-09T19:03:27 IST" name="initializeDriverAndLaunchApplication" finished-at="2024-03-09T19:03:29 IST" duration-ms="2594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriverAndLaunchApplication -->
+        <test-method signature="loginAndLogout()[pri:0, instance:TestCases.VerifyLoginAndLogout@48d61b48]" started-at="2024-03-09T19:03:29 IST" name="loginAndLogout" finished-at="2024-03-09T19:04:00 IST" duration-ms="30613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyLoginAndLogout@48d61b48]" started-at="2024-03-09T19:04:00 IST" name="tearDown" finished-at="2024-03-09T19:04:00 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.VerifyLoginAndLogout -->
+    </test> <!-- Verify Login and Logout test -->
+    <test started-at="2024-03-09T19:04:00 IST" name="Verify Stylist Pick Date And book" finished-at="2024-03-09T19:04:49 IST" duration-ms="48805">
+      <class name="TestCases.VerifyBookAppointmentFromPickStylistaAndDate">
+        <test-method is-config="true" signature="initializeDriverAndLaunchApplication()[pri:0, instance:TestCases.VerifyBookAppointmentFromPickStylistaAndDate@4f6f416f]" started-at="2024-03-09T19:04:00 IST" name="initializeDriverAndLaunchApplication" finished-at="2024-03-09T19:04:10 IST" duration-ms="9623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriverAndLaunchApplication -->
+        <test-method signature="BookAppointmentFromPickStylistAndDate()[pri:0, instance:TestCases.VerifyBookAppointmentFromPickStylistaAndDate@4f6f416f]" started-at="2024-03-09T19:04:10 IST" name="BookAppointmentFromPickStylistAndDate" finished-at="2024-03-09T19:04:49 IST" duration-ms="38841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookAppointmentFromPickStylistAndDate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyBookAppointmentFromPickStylistaAndDate@46fa7c39]" started-at="2024-03-04T20:18:34 IST" name="tearDown" finished-at="2024-03-04T20:18:35 IST" duration-ms="326" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.VerifyBookAppointmentFromPickStylistaAndDate@4f6f416f]" started-at="2024-03-09T19:04:49 IST" name="tearDown" finished-at="2024-03-09T19:04:49 IST" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.VerifyBookAppointmentFromPickStylistaAndDate -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Verify Stylist Pick Date And book -->
+  </suite> <!-- Suite -->
 </testng-results>

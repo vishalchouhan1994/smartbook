@@ -8,11 +8,27 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">26,360</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">AddFeatureService Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,636</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Verify Login Page Error Validations Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">54,540</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Verify Login and book appointment from first available service test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">35,173</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Verify Login and Logout test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">33,580</td><td></td><td></td></tr>
+<tr><td><a href="#t4">Verify Stylist Pick Date And book</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">48,805</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num attn">1</th><th class="num attn">1</th><th class="num">209,734</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.VerifyBookAppointmentFromPickStylistaAndDate</td><td><a href="#m0">BookAppointmentFromPickStylistAndDate</a></td><td rowspan="1">1709563692458</td><td rowspan="1">22276</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AddFeatureService Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.VerifyAddFeaturServiceInCart</td><td><a href="#m0">BookFeaturedService</a></td><td rowspan="1">1709991090172</td><td rowspan="1">26546</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Verify Login Page Error Validations Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.VerifyLoginPageErrorValidations</td><td><a href="#m1">LoginPageError</a></td><td rowspan="1">1709991157472</td><td rowspan="1">14039</td></tr><tr><th colspan="4">Verify Login Page Error Validations Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">TestCases.VerifyLoginPageErrorValidations</td><td><a href="#m2">LoginPageError</a></td><td rowspan="1">1709991127556</td><td rowspan="1">14711</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Verify Login and book appointment from first available service test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots</td><td><a href="#m3">loginAndBookFirstAvailableSlotAppointment</a></td><td rowspan="1">1709991181774</td><td rowspan="1">25146</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Verify Login and Logout test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.VerifyLoginAndLogout</td><td><a href="#m4">loginAndLogout</a></td><td rowspan="1">1709991209953</td><td rowspan="1">30613</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">Verify Stylist Pick Date And book &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.VerifyBookAppointmentFromPickStylistaAndDate</td><td><a href="#m5">BookAppointmentFromPickStylistAndDate</a></td><td rowspan="1">1709991250610</td><td rowspan="1">38841</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">TestCases.VerifyBookAppointmentFromPickStylistaAndDate#BookAppointmentFromPickStylistAndDate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>AddFeatureService Test</h2><h3 id="m0">TestCases.VerifyAddFeaturServiceInCart#BookFeaturedService</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Verify Login Page Error Validations Test</h2><h3 id="m1">TestCases.VerifyLoginPageErrorValidations#LoginPageError</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect username or passworded.] but found [Incorrect username or password.]
+	at TestCases.VerifyLoginPageErrorValidations.LoginPageError(VerifyLoginPageErrorValidations.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Verify Login and book appointment from first available service test</h2><h3 id="m2">TestCases.VerifyLoginAndBookAppointmentFromFirstAvailableSlots#loginAndBookFirstAvailableSlotAppointment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Verify Login and Logout test</h2><h3 id="m3">TestCases.VerifyLoginAndLogout#loginAndLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Verify Stylist Pick Date And book</h2><h3 id="m4">TestCases.VerifyBookAppointmentFromPickStylistaAndDate#BookAppointmentFromPickStylistAndDate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

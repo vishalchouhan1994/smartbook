@@ -19,7 +19,7 @@ public class VerifyLoginPageErrorValidations extends BaseClass {
 		landingpage.clickOnLoginBtn();
 		LoginPage loginpage = new LoginPage(driver);
 		String actual = loginpage.loginInAppWithInvalidCredentials("1234567890", "Smartlook@123");
-		assertEquals(actual, "Incorrect username or passworded.");
+		assertEquals(actual, "Incorrect username or password.");
 
 	}
 
